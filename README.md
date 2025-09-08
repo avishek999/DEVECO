@@ -4,22 +4,22 @@
 
 ---
 
-<img src="/logo.jpg">
----
+## <img src="public/logo.jpeg">
 
 ## Features
 
-- Post text and image  updates to LinkedIn from your personal account.
+- Post text and image updates to LinkedIn from your personal account.
 - Post text and image updates to X (Twitter) using API.
 - Future-ready: can integrate with AI summarizers to convert commits/notes into posts.
 - Modular, scalable Node.js design.
-
 
 ---
 
 ## Setup
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/avishek999/DEVECO/
 cd DevEcho
+```
