@@ -34,3 +34,33 @@ export async function postLinkedIn(message) {
             console.error("❌ LinkedIn post failed:", error.response?.data || error.message);
     }
 }
+
+export async function registerImgLinkedIn(message) {
+    try {
+        const res = await axios.post(
+          LINKEDIN_API,{
+  "registerUploadRequest": {
+    "owner": "urn:li:person:{yourLinkedInId}",
+    "recipes": ["urn:li:digitalmediaRecipe:feedshare-image"],
+    "serviceRelationships": [
+      {
+        "relationshipType": "OWNER",
+        "identifier": "urn:li:userGeneratedContent"
+      }
+    ]
+  }
+},
+           {
+        headers: {
+          Authorization: `Bearer ${LINKEDIN.LINKEDIN_TOKEN}`,
+          "Content-Type": "application/json"
+        }
+      }
+          
+        );
+        console.log("✅ Posted to LinkedIn:", res.data);
+        
+    } catch (error) {
+            console.error("❌ LinkedIn post failed:", error.response?.data || error.message);
+    }
+}

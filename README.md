@@ -4,6 +4,9 @@
 
 ---
 
+<img src="/logo.jpg">
+---
+
 ## Features
 
 - Post text and image  updates to LinkedIn from your personal account.
