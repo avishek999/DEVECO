@@ -19,5 +19,5 @@ export const X = {
 
 export const LINKEDIN_BASE_URL = "https://api.linkedin.com/";
 export const LINKEDIN_TEXT_ONLY_API = LINKEDIN_BASE_URL + "v2/ugcPosts";
-export const LINKEDIN__IMG_API =
-  LINKEDIN_BASE_URL + " assets?action=registerUpload";
+export const LINKEDIN__REGISTER_IMAGE_API =
+  LINKEDIN_BASE_URL + "v2/assets?action=registerUpload";

@@ -1,7 +1,7 @@
-import { postLinkedIn } from "./service/linkdedInService.js";
-
-
+import {  postTextWithImageInLinkedIn} from "./service/linkdedInService.js";
 
 (async () => {
-  await postLinkedIn("Hello from Node.js script 🚀");
+  await postTextWithImageInLinkedIn("./public/logo.jpeg", "Hello LinkedIn 👋");
 })();
+
+
