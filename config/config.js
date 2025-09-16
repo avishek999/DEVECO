@@ -11,9 +11,12 @@ export const LINKEDIN = {
 };
 
 export const X = {
-  X_BEARER_TOKEN: process.env.X_BEARER_TOKEN,
-  apiSecret: process.env.TWITTER_API_SECRET,
+  X_API_KEY: process.env.X_API_KEY,
+  X_API_SECRET: process.env.X_API_SECRET,
+  X_ACCESS_TOKEN: process.env.X_ACCESS_TOKEN,
+  X_ACCESS_SECRET: process.env.X_ACCESS_SECRET,
 };
+
 
 // ======================  LinkedIn APIS ==========================
 
@@ -21,7 +24,3 @@ export const LINKEDIN_BASE_URL = "https://api.linkedin.com/";
 export const LINKEDIN_TEXT_ONLY_API = LINKEDIN_BASE_URL + "v2/ugcPosts";
 export const LINKEDIN__REGISTER_IMAGE_API =
   LINKEDIN_BASE_URL + "v2/assets?action=registerUpload";
-
-
-
-// ======================  X APIS ==========================

@@ -1,7 +1,3 @@
-import {  postTextWithImageInLinkedIn} from "./service/linkdedInService.js";
+// import {  postTextWithImage } from "./service/xService.js";
 
-(async () => {
-  await postTextWithImageInLinkedIn("./public/logo.jpeg", "Hello LinkedIn 👋");
-})();
-
-
+// postTextWithImage("Hello with image 🚀", "./public/logo.jpeg");
