@@ -17,6 +17,10 @@ export const X = {
   X_ACCESS_SECRET: process.env.X_ACCESS_SECRET,
 };
 
+export const GITHUB = {
+  token: process.env.GITHUB_TOKEN,
+  username: process.env.GITHUB_USERNAME,
+};
 
 // ======================  LinkedIn APIS ==========================
 
