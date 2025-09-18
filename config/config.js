@@ -22,6 +22,7 @@ export const GITHUB = {
   username: process.env.GITHUB_USERNAME,
 };
 
+export const NOTION_TOKEN = process.env.NOTION_TOKEN;
 // ======================  LinkedIn APIS ==========================
 
 export const LINKEDIN_BASE_URL = "https://api.linkedin.com/";

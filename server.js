@@ -1,3 +1,6 @@
-import { getUserEvents } from "./service/githubService.js";
+import { getNotesLast24h } from "./service/notionService.js";
 
-getUserEvents()
+(async () => {
+  const notes = await getNotesLast24h();
+  console.log("Notes from last 24h:", notes);
+})();
