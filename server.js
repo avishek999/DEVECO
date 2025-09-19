@@ -1,6 +1,4 @@
-import { getNotesLast24h } from "./service/notionService.js";
+import { generateTextAndImage } from "./service/geminiService.js";
 
-(async () => {
-  const notes = await getNotesLast24h();
-  console.log("Notes from last 24h:", notes);
-})();
+
+generateTextAndImage([{ msg: "write hello world in java , learn basic " }], ["what is jabva , java is programming language"]);

@@ -23,6 +23,10 @@ export const GITHUB = {
 };
 
 export const NOTION_TOKEN = process.env.NOTION_TOKEN;
+
+
+export const GEMINI_API = process.env.GEMINI_API
+
 // ======================  LinkedIn APIS ==========================
 
 export const LINKEDIN_BASE_URL = "https://api.linkedin.com/";
