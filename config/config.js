@@ -24,8 +24,13 @@ export const GITHUB = {
 
 export const NOTION_TOKEN = process.env.NOTION_TOKEN;
 
+export const GEMINI_API = process.env.GEMINI_API;
 
-export const GEMINI_API = process.env.GEMINI_API
+export const SMTP = {
+  email: process.env.EMAIL,
+  password: process.env.EMAIL,
+  to: process.env.EMAIL_TO,
+};
 
 // ======================  LinkedIn APIS ==========================
 

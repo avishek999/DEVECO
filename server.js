@@ -1,10 +1,3 @@
-// import { generateTextAndImage } from "./service/geminiService.js";
+import { sendEMail } from "./service/emailService.js";
 
-import { getImage } from "./service/geminiService.js";
-
-
-// generateTextAndImage([{ msg: "write hello world in java , learn basic " }], ["what is jabva , java is programming language"]);
-
-
-
-getImage() 
+sendEMail("Test Email", "Hello! This is a test email sent from Node.js.");
