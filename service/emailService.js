@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
 import { SMTP } from "../config/config.js";
 
-
 export async function sendEMail(subject, body) {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -17,8 +16,7 @@ export async function sendEMail(subject, body) {
     from: `"Avishek" <${SMTP.email}>`,
     to: SMTP.to,
     subject,
-   text: body, 
-    html: "<b>Hello!</b> This is a test email sent from Node.js.",
+    text: body,
   };
 
   try {
