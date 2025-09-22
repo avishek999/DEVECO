@@ -1,14 +1,15 @@
 import nodemailer from "nodemailer";
 import { SMTP } from "../config/config.js";
 
+
 export async function sendEMail(subject, body) {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
     secure: true, // true for 465
     auth: {
-      user: SMTP.email,
-      pass: SMTP.password,
+      user: "apavishek780@gmail.com",
+      pass: "ypbdozbgzzzrfvwc",
     },
   });
 
@@ -16,7 +17,7 @@ export async function sendEMail(subject, body) {
     from: `"Avishek" <${SMTP.email}>`,
     to: SMTP.to,
     subject,
-    body,
+   text: body, 
     html: "<b>Hello!</b> This is a test email sent from Node.js.",
   };
 
