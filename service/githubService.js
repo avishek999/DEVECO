@@ -13,22 +13,28 @@ export async function getUserEvents() {
       }
     );
 
-    const last24h = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    // GitHub events are in res.data
+    const events = res.data;
 
-    const commits = res.data
-      .filter((e) => e.type === "PushEvent" && new Date(e.created_at) > last24h)
+    const last24h =  Date.now() - 24 * 60 * 60 * 1000;
+
+    const commits = events
+      .filter((e) => e.type === "PushEvent" &&  Date.parse(e.created_at) > last24h)
       .flatMap((e) =>
         e.payload.commits.map((c) => ({
           repo: e.repo.name,
           sha: c.sha,
           message: c.message,
-          url: c.url,
+          url: `https://github.com/${e.repo.name}/commit/${c.sha}`,
           date: e.created_at,
         }))
       );
 
     console.log(commits.length ? commits : "No commits in last 24h 🚫");
+
+    // return commits; // return commits array
   } catch (err) {
     console.error("Error:", err.response?.data || err.message);
+    return [];
   }
 }

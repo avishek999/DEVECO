@@ -9,17 +9,17 @@ async function main() {
   const githubEvent = await getUserEvents();
   const notionEvent = await getNotesLast24h();
 
-  const geminiResult = await generateTextAndImage(githubEvent, notionEvent);
+//   const geminiResult = await generateTextAndImage(githubEvent, notionEvent);
 
   //   const mail = sendEMail("AUTOMAATION SCRIPT", geminiResult);
 
-  const post = JSON.parse(geminiResult);
+//   const post = JSON.parse(geminiResult);
 
   //   const linkedInPost = await postOnlyTextInLinkedIn(post.linkedin);
 
-//   const xPost = await postTextTweet(post.x);
+  //   const xPost = await postTextTweet(post.x);
 
-  console.log(post);
-} 
+  console.log(githubEvent);
+}
 
 main();
