@@ -32,7 +32,7 @@ export async function getUserEvents() {
 
     console.log(commits.length ? commits : "No commits in last 24h 🚫");
 
-    // return commits; // return commits array
+    return commits; // return commits array
   } catch (err) {
     console.error("Error:", err.response?.data || err.message);
     return [];
