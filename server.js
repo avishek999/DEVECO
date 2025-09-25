@@ -11,7 +11,7 @@ async function main() {
 
   const geminiResult = await generateTextAndImage(githubEvent, notionEvent);
 
-  //   const mail = sendEMail("AUTOMAATION SCRIPT", geminiResult);
+    const mail = sendEMail("AUTOMAATION SCRIPT", geminiResult);
 
   const post = JSON.parse(geminiResult);
 
