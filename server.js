@@ -19,7 +19,7 @@ async function main() {
 
   //   const xPost = await postTextTweet(post.x);
 
-  console.log(post);
+  // console.log(post);
 } 
 
 main();
